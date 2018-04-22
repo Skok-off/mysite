@@ -1,5 +1,5 @@
 altgraph==0.15
--e git+https://github.com/django/django.git@9a56b4b13ed92d2d5bb00d6bdb905a73bc5f2f0a#egg=Django
+-e git+https://github.com/django/django.git#egg=Django
 future==0.16.0
 macholib==1.9
 pefile==2017.11.5
