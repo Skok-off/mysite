@@ -4,27 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Заголовок страницы</title>
   {% load staticfiles %}
-  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"
-  type="text/css">
+  <title>Заголовок страницы</title>
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 </head>
 <body>
-  <div class="jumbotron">
-      <div class="container">
-        <h1>{% include "mainApp/includes/some_html.html" %}</h1>
         {% block content %}
         {% endblock %}
-        <p>
-          <a href="/" class="btn btn-success btn-lg">Главная страница</a>
-          <a href="/news" class="btn btn-primary btn-lg">Узнать больше &raquo;</a>
-        </p>
-      </div>
-    </div>
-    <div class="container">
-      <img src="{% static 'mainApp/image/image.png' %}" class="img-thumbnail" style="width: 25%">
-      <hr>
-      &copy; Все права защищены 2018
-    </div>
+        <div class="container-fluid bg-light text-center">
+          <br><br>
+          <img src="{% static 'mainApp/image/bootlogo.png' %}" class="img-thumbnail shadow-lg rounded">
+          <br><br>
+        </div>
+
+
+<!-- Bootstrap JS and JQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
 </html>
