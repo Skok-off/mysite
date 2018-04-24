@@ -1,52 +1,13 @@
 {% extends "mainApp/wrapper.html" %}
-
+{% load staticfiles %}
 {% block content %}
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a href="#" class="navbar-brand">Home</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
-    <span class="navbar-toggler-icon">
-    <span class="navbar-toggler-icon">
-    <span class="navbar-toggler-icon">
-  </button>
-  <div class="collapse navbar-collapse" id="menu">
-    <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a href="#" class="nav-link text-success">Ссылка 1</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-primary">Ссылка 2</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-warning">Ссылка 3</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-danger">Ссылка 4</a></li>
-          <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown">
-            Выпадающий список
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a href="#" class="dropdown-item bg-primary text-white">Выпадающая ссылка 1</a>
-            <a href="#" class="dropdown-item text-danger">Выпадающая ссылка 2</a>
-            <a href="#" class="dropdown-item text-warning">Выпадающая ссылка 3</a>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">Выпадающая ссылка 4</a>
-          </div>
-          </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text  borser border-success" id="basic-addon1">@</span>
-        </div>
-        <input class="form-control mr-sm-2  borser border-success" type="search" placeholder="Логин" aria-label="Search">
-      </div>
-
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Вход</button>
-    </form>
-  </div>
-</nav>
-
-<div class="jumbotron" style="margin-bottom: 0">
-  <h1>Страница на Bootstrap!</h1>
-  <p class="lead">Bootstrap (также известен как Twitter Bootstrap) — свободный набор инструментов для создания сайтов и веб-приложений. Включает в себя HTML- и CSS-шаблоны оформления для типографики, веб-форм, кнопок, меток, блоков навигации и прочих компонентов веб-интерфейса, включая JavaScript-расширения.
+<h1>Страница на Bootstrap!</h1>
+<p class="lead">Bootstrap (также известен как Twitter Bootstrap) — свободный набор инструментов для создания сайтов и веб-приложений. Включает в себя HTML- и CSS-шаблоны оформления для типографики, веб-форм, кнопок, меток, блоков навигации и прочих компонентов веб-интерфейса, включая JavaScript-расширения.
 
 Bootstrap использует современные наработки в области CSS и HTML, поэтому необходимо быть внимательным при поддержке старых браузеров.</p>
-  <hr class="my-4">
-  <p class="text-primary">29 октября 2014 года Марк Отто объявил, что Bootstrap 4 находится в разработке. 6 сентября 2016 года Марк приостановил работу над Bootstrap 3, чтобы высвободить время для работы над Bootstrap 4. На текущий момент было внесено более 4000 изменений к базовому коду Bootstrap 4. Первая стабильная версия вышла 19 января 2018 года.</p>
-  <a class="btn btn-success btn-lg" href="#" role="button" >Узнать больше</a>
-</div>
+<hr class="my-4">
+<p class="text-primary">29 октября 2014 года Марк Отто объявил, что Bootstrap 4 находится в разработке. 6 сентября 2016 года Марк приостановил работу над Bootstrap 3, чтобы высвободить время для работы над Bootstrap 4. На текущий момент было внесено более 4000 изменений к базовому коду Bootstrap 4. Первая стабильная версия вышла 19 января 2018 года.</p>
+<a class="btn btn-success btn-lg" href="#" role="button" >Узнать больше</a>
+
 
 {% endblock %}
